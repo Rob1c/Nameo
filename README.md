@@ -3,6 +3,25 @@
 
 Nameo is an useful tool wrote in Shell Script for quickly renaming files in Linux-based systems.
 
+## How to use
+
+Download the .sh file by clicking on the download icon in the code page;
+
+Go to the directory where you saved the file
+```bash
+  cd ~/mydir/
+```
+
+Make Nameo executable
+```bash
+  chmod +x nameo_1.0.0
+```
+Run it
+```bash
+  ./nameo_1.0.0
+```
+
+Enjoy!
 
 ## Features of the First Release (1.0.0)
 
