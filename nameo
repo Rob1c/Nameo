@@ -1,0 +1,37 @@
+#!/bin/bash
+
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
+# Created by Roberto Chichiarelli on 11/10/2024
+# Free-to-use for all world's Linux users
+# Support me by following @Rob1c on Github!
+# For any doubts always avaliable! : roberto.chichiarelli@gmail.com
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
+
+#start
+read -p "Enter the directory path to rename: " directory
+
+if [ ! -d "$directory" ]; then
+  echo "Directory does not exist. Exiting."
+  exit 1
+fi
+
+read -p "Press Enter to start renaming the files..."
+
+rename_items() {
+  find "$1" -depth | while read -r file; do
+    base_name=$(basename "$file")
+    new_name=$(echo "$base_name" | tr ' ' '_' | tr '[:upper:]' '[:lower:]')
+    dir_name=$(dirname "$file")
+    new_path="$dir_name/$new_name"
+
+    if [ "$file" != "$new_path" ]; then
+      mv "$file" "$new_path"
+      echo "Renamed: $file -> $new_path"
+    fi
+  done
+}
+
+rename_items "$directory"
+
+echo "Renaming completed."
+
