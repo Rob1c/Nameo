@@ -14,11 +14,11 @@ Go to the directory where you saved the file
 
 Make Nameo executable
 ```bash
-  chmod +x nameo_1.0.0
+  chmod +x nameo_x
 ```
 Run it
 ```bash
-  ./nameo_1.0.0
+  ./nameo_x
 ```
 
 Enjoy!
