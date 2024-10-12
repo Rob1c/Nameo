@@ -9,16 +9,16 @@ Download the .sh file by clicking on the download icon in the code page;
 
 Go to the directory where you saved the file
 ```bash
-  cd ~/mydir/
+  $ cd ~/mydir/
 ```
 
 Make Nameo executable
 ```bash
-  chmod +x nameo_x
+  $ chmod +x nameo_x
 ```
 Run it
 ```bash
-  ./nameo_x
+  $ ./nameo_x
 ```
 
 Enjoy!
