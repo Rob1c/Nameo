@@ -23,7 +23,7 @@ Run it
 
 Enjoy!
 
-## Features of the First Release (1.0.0)
+## Features of the First Release (1.0.0) ⚠️UNSTABLE DO NOT USE⚠️
 
 - On Linux Shell 📟
 - Interactive Commands 👆
